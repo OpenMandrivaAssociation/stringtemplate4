@@ -1,2 +1,4 @@
 sources:
-  "ST-4.0.4-src.zip": ef8e9822da72faea4108fdbad858474cd9fb672e
+  ST-4.0.4-src.zip: ef8e9822da72faea4108fdbad858474cd9fb672e
+  stringtemplate4-4.0.4-6.0-omv2014.0.noarch.rpm: 818c773ddcc7b60e2a4a11c24c74931c2af3d6cd
+  stringtemplate4-javadoc-4.0.4-6.0-omv2014.0.noarch.rpm: d50ab473858473b50b78bf272742f5acf85a676b
