@@ -3,8 +3,9 @@
 
 Name:      stringtemplate4
 Version:   4.0.4
-Release:   6.1%{?dist}
+Release:   9.1
 Summary:   A Java template engine
+Group:     Development/Java
 URL:       http://www.stringtemplate.org/
 Source0:   http://www.stringtemplate.org/download/%{pkgname}-%{version}-src.zip
 
@@ -82,11 +83,8 @@ mkdir -p %{buildroot}%{_javadocdir}/%{name}
 cp -pr javadoc/* %{buildroot}%{_javadocdir}/%{name}/
 
 
-%files
+%files -f .mfiles
 %doc LICENSE.txt README.txt
-%{_datadir}/java/%{name}.jar
-%{_mavenpomdir}/JPP-%{name}.pom
-%{_mavendepmapfragdir}/%{name}
 
 %files javadoc
 %doc LICENSE.txt
