@@ -3,7 +3,7 @@
 
 Name:      stringtemplate4
 Version:   4.0.4
-Release:   9.1
+Release:   9.2
 Summary:   A Java template engine
 Group:     Development/Java
 URL:       http://www.stringtemplate.org/
