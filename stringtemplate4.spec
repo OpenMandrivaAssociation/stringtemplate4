@@ -16,7 +16,6 @@ BuildRequires:  mvn(org.antlr:antlr-runtime)
 BuildRequires:  mvn(org.antlr:antlr3-maven-plugin)
 BuildRequires:  mvn(org.sonatype.oss:oss-parent:pom:)
 
-
 %description
 StringTemplate is a java template engine (with ports for
 C# and Python) for generating source code, web pages,
