@@ -5,7 +5,7 @@ Version:        4.0.8
 Release:        5
 Summary:        A Java template engine
 License:        BSD
-URL:            http://www.stringtemplate.org/
+URL:            https://www.stringtemplate.org/
 BuildArch:      noarch
 
 Source0:        https://github.com/antlr/stringtemplate4/archive/%{version}.tar.gz
