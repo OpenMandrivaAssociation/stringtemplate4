@@ -7,6 +7,9 @@ Summary:        A Java template engine
 License:        BSD
 URL:            https://www.stringtemplate.org/
 BuildArch:      noarch
+# Literal, so the first rpmbuild -bs records them before sysjar is installed.
+BuildRequires:	maven
+BuildRequires:	java-current-devel
 BuildSystem:	maven
 
 Source0:        https://github.com/antlr/stringtemplate4/archive/refs/tags/ST4-%{version}.tar.gz
