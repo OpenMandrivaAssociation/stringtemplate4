@@ -24,7 +24,6 @@ Source4:        STParser.java
 
 BuildRequires:  python
 BuildRequires:  antlr-runtime
-BuildRequires:  sonatype-oss-parent
 
 %description
 StringTemplate is a java template engine (with ports for
@@ -57,6 +56,10 @@ def local(tag):
 
 tree = ET.parse("pom.xml")
 root = tree.getroot()
+# oss-parent is not packaged. Dependency versions in this POM are explicit.
+for node in list(root):
+    if local(node.tag) == "parent":
+        root.remove(node)
 drop = {"antlr3-maven-plugin", "build-helper-maven-plugin", "maven-javadoc-plugin"}
 for parent in list(root.iter()):
     for node in list(parent):
